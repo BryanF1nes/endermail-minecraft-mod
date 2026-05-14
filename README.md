@@ -1,9 +1,16 @@
-# endermail
+# Endermail
 
-## Setup
+## Minecraft Mod Description
+Endermail is a Minecraft server mod that creates a new item by combining an ender chest with a loadstone to allow players to have a shared inventory on their Minecraft server.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## Development
+Currently Endermail is still in development. I will be providing updates on the mods development in this readme until release.
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+[x] Mod Structure Created
+[ ] Initial Planning
+[ ] Core design implementation
+[ ] Testing Core design
+[ ] Core crafting mechanics
+[ ] Testing Core crafting mechanics
+[ ] Stable build
+[ ] Release

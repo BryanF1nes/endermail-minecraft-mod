@@ -1,5 +1,6 @@
 package bryan.endermail;
 
+import bryan.endermail.blocks.ModBlocks;
 import bryan.endermail.item.ModItems;
 
 import net.fabricmc.api.ModInitializer;
@@ -15,5 +16,6 @@ public class Endermail implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.initialize();
+        ModBlocks.initialize();
     }
 }

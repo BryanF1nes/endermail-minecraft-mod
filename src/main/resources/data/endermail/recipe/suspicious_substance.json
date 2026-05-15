@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:lodestone",
+    "minecraft:ender_chest"
+  ],
+  "result": {
+    "id": "endermail:suspicious_substance",
+    "count": 2
+  }
+}

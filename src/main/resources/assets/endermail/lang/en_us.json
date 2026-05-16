@@ -1,6 +1,4 @@
 {
-    "item.endermail.suspicious_substance": "Suspicious Substance"
-},
-{
-    "block.endermail.ender_mail": "Ender Mail Chest"
+    "item.endermail.suspicious_substance": "Suspicious Substance",
+    "block.endermail.ender_mail_chest": "Ender Mail Chest"
 }

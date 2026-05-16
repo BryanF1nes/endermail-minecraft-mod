@@ -17,7 +17,13 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
-    public static final Block ENDER_MAIL = register("ender_mail", Block::new,
+    public static final Block COUNTER_BLOCK = register(
+            "counter_block",
+            CounterBlock::new,
+            BlockBehaviour.Properties.of(),
+            true);
+
+    public static final Block ENDER_MAIL_CHEST = register("ender_mail_chest", Block::new,
             BlockBehaviour.Properties.of().sound(SoundType.CHAIN), true);
 
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory,
@@ -47,7 +53,7 @@ public class ModBlocks {
 
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register((creativeTab) -> {
-            creativeTab.accept(ModBlocks.ENDER_MAIL.asItem());
+            creativeTab.accept(ModBlocks.ENDER_MAIL_CHEST.asItem());
         });
     }
 }

@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/cube_all",
     "textures": {
-        "all": "endermail:block/ender_mail"
+        "all": "endermail:block/ender_mail_chest"
     }
 }

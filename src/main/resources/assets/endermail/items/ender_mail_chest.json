@@ -1,6 +1,6 @@
 {
     "model": {
         "type": "minecraft:model",
-        "model": "endermail:block/ender_mail"
+        "model": "endermail:block/ender_mail_chest"
     }
 }

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "endermail:block/ender_mail_chest"
+        }
+    }
+}

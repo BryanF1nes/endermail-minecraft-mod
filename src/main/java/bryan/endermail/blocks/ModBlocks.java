@@ -17,12 +17,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
-    public static final Block COUNTER_BLOCK = register(
-            "counter_block",
-            CounterBlock::new,
-            BlockBehaviour.Properties.of(),
-            true);
-
     public static final Block ENDER_MAIL_CHEST = register("ender_mail_chest", Block::new,
             BlockBehaviour.Properties.of().sound(SoundType.CHAIN), true);
 

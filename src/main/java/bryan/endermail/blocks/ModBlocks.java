@@ -18,6 +18,9 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
+    public static final Block COUNTER_BLOCK = register("counter_block", CounterBlock::new,
+            BlockBehaviour.Properties.of(), true);
+
     public static final Block PRISMARINE_LAMP = register("prismarine_lamp", PrismarineLampBlock::new,
             BlockBehaviour.Properties.of().sound(SoundType.LANTERN).lightLevel(PrismarineLampBlock::getLuminance),
             true);
@@ -66,5 +69,8 @@ public class ModBlocks {
             creativeTab.accept(ModBlocks.PRISMARINE_LAMP.asItem());
         });
 
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register((creativeTab) -> {
+            creativeTab.accept(ModBlocks.COUNTER_BLOCK.asItem());
+        });
     }
 }

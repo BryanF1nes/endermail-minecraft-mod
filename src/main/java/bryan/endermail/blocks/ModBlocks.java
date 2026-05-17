@@ -18,6 +18,10 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
+    public static final Block PRISMARINE_LAMP = register("prismarine_lamp", PrismarineLampBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.LANTERN).lightLevel(PrismarineLampBlock::getLuminance),
+            true);
+
     public static final Block CONDENSED_OAK_LOG = register("condensed_oak_log", RotatedPillarBlock::new,
             BlockBehaviour.Properties.of().sound(SoundType.WOOD), true);
 
@@ -56,6 +60,10 @@ public class ModBlocks {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register((creativeTab) -> {
             creativeTab.accept(ModBlocks.CONDENSED_OAK_LOG.asItem());
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register((creativeTab) -> {
+            creativeTab.accept(ModBlocks.PRISMARINE_LAMP.asItem());
         });
 
     }

@@ -13,10 +13,14 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
+    public static final Block CONDENSED_OAK_LOG = register("condensed_oak_log", RotatedPillarBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.WOOD), true);
+
     public static final Block ENDER_MAIL_CHEST = register("ender_mail_chest", Block::new,
             BlockBehaviour.Properties.of().sound(SoundType.CHAIN), true);
 
@@ -49,5 +53,10 @@ public class ModBlocks {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register((creativeTab) -> {
             creativeTab.accept(ModBlocks.ENDER_MAIL_CHEST.asItem());
         });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register((creativeTab) -> {
+            creativeTab.accept(ModBlocks.CONDENSED_OAK_LOG.asItem());
+        });
+
     }
 }
